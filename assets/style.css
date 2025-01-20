@@ -6,7 +6,7 @@
 
 :root {
   --dis-primary-blue: #255bef;
-  --dis-lightgrey:#f6f6f6;
+  --dis-lightgrey: #f6f6f6;
 }
 
 html,
@@ -155,7 +155,7 @@ header {
 .container {
   width: 60%;
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   padding-top: 5rem;
   padding-bottom: 5rem;
   gap: 5rem;
@@ -211,9 +211,15 @@ justify-content: space-between;
   }
 }
 
-.wave {
-  background-image: url(/assets/img/wave.svg);
-  background-size: cover;
-  background-color: var();
+.wave_up {;
+  width: 100%;
+  height: 80px;
+  margin-bottom:-0.5rem;
+}
+
+.wave_down {
+  width: 100%;
   height: 100px;
+  transform: rotate(180deg);
+    margin-bottom:-0.5rem;
 }
