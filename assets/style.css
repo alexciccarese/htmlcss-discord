@@ -7,6 +7,7 @@
 :root {
   --dis-primary-blue: #255bef;
   --dis-seconday-blue: #8ea1e1;
+  --dis-darkgrey: #23272a;
   --dis-lightgrey: #f6f6f6;
 }
 
@@ -23,6 +24,10 @@ body {
   h2 {
     font-size: 36px;
     padding-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   p {
@@ -164,10 +169,10 @@ header {
     .stars {
       width;
       background-image: url(/assets/img/stars.svg);
-      background-size: 50%;
+      background-size: 70%;
       background-position: center;
       background-repeat: no-repeat;
-      padding-top: 2rem;
+      padding-top: 3.5rem;
     }
 
     .actions {
@@ -196,23 +201,72 @@ header {
 }
 
 
-.info {
-  min-height: 628px;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #d3d3d3;
+.wave_up {
+  width: 100%;
+  height: 80px;
+  margin-bottom: -0.5rem;
+}
 
-  .container {
-    margin-top: 10px;
-    margin-bottom: 40px;
+.wave_down {
+  width: 100%;
+  height: 100px;
+  transform: rotate(180deg);
+  margin-bottom: -0.5rem;
+}
+
+footer {
+  background-color: var(--dis-darkgrey);
+  color: white;
+
+  .info {
+    display: flex;
+    justify-content: center;
 
     .items_0 {
       width: 40%;
+
+      h3 {
+        color: var(--dis-seconday-blue);
+      }
+
+      .language {
+        display: flex;
+        align-items: center;
+        padding-top: 2rem;
+        gap: 8px;
+
+        .flag {
+          width: 25px;
+        }
+
+        .down-arrow {
+          width: 18px;
+        }
+      }
+
+      .direct_link {
+        padding-top: 2rem;
+        display: flex;
+        gap: 20px;
+
+        .icon {
+          height: 1.5rem;
+        }
+      }
     }
 
     .items_1 {
       width: 20%;
-      border-left: 1px solid;
+
+      .title_list {
+        font-weight: bold;
+        color: var(--dis-seconday-blue);
+      }
+
+      ul li {
+        list-style: none;
+        line-height: 32px;
+      }
     }
   }
 }
@@ -233,17 +287,4 @@ header {
       border: 0;
     }
   }
-}
-
-.wave_up {;
-  width: 100%;
-  height: 80px;
-  margin-bottom:-0.5rem;
-}
-
-.wave_down {
-  width: 100%;
-  height: 100px;
-  transform: rotate(180deg);
-    margin-bottom:-0.5rem;
 }
