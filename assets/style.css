@@ -11,7 +11,20 @@
 html,
 body {
   height: 100%;
-  font-family: "Open Sans", serif;
+  font-family: Arial, Helvetica, sans-serif;
+
+  h1 {
+    font-size: 42px;
+    color: white;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  p {
+    line-height: 24px;
+  }
 }
 
 .list_unstyled {
@@ -58,9 +71,9 @@ header {
       &:hover {
         cursor: pointer;
       }
-      }
     }
   }
+}
 
 .jumbotron {
   background-image: url(/assets/img/jumbo.png);
@@ -76,8 +89,8 @@ header {
 
     h1 {
       color: white;
-      font-size: 50px;
     }
+
 
     p {
       padding: 2rem 4rem;
@@ -96,6 +109,7 @@ header {
       border-radius: 40px;
       border-style: none;
     }
+
     .white {
       background-color: white;
     }
@@ -109,9 +123,13 @@ header {
 
 
 .invite_only {
-  min-height: 600px;
   display: flex;
   justify-content: center;
+
+  h2 {
+    font-weight:700;
+    margin-bottom: 1rem;
+  }
 }
 
 .community {
@@ -139,19 +157,19 @@ header {
 .container {
   width: 60%;
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  align-items: start;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 5rem;
 
   .img_items {
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    margin-top: -1.5rem;
   }
 
   .text_items {
-    width: 40%;
-    height: 100%;
-
+    width: 30%;
+    gap: 1rem;
   }
 }
 
@@ -165,11 +183,11 @@ header {
   .container {
     margin-top: 10px;
     margin-bottom: 40px;
-  
+
     .items_0 {
       width: 40%;
     }
-  
+
     .items_1 {
       width: 20%;
       border-left: 1px solid;
@@ -188,13 +206,9 @@ header {
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: space-between;
-    
-    img {
-    }
 
     input {
       border: 0;
     }
   }
 }
-
