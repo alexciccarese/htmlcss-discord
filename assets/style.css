@@ -84,7 +84,7 @@ header {
 }
 
 .jumbotron {
-  background-image: url(/assets/img/jumbo.png);
+  background-image: url(./img/jumbo.png);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -111,7 +111,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding-bottom: 4rem;
+ 
 
   input {
     padding: 12px 24px;
@@ -170,7 +170,7 @@ header {
 
     .stars {
       width;
-      background-image: url(/assets/img/stars.svg);
+      background-image: url(./img/stars.svg);
       background-size: 70%;
       background-position: center;
       background-repeat: no-repeat;
@@ -286,18 +286,16 @@ footer {
       display: flex;
       justify-content: center;
     
+    
       .container {
         margin: 0;
-        padding-top: 2rem;
+        display: flex;
         justify-content: space-between;
         border-top: 0.5px solid var(--dis-seconday-blue);
-    
-        input {
-          border: 0;
+        padding-top: 2rem;
         }
       }
     }
-  }
 
 
 
