@@ -269,22 +269,21 @@ footer {
       }
     }
   }
-}
 
-.credits {
-  max-height: 100px;
-  display: flex;
-  justify-content: center;
-  padding-top: 30px;
-
-  .container {
-    margin: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    justify-content: space-between;
-
-    input {
-      border: 0;
+  .credits {
+    display: flex;
+    justify-content: center;
+  
+    .container {
+      margin: 0;
+      padding-top: 2rem;
+      justify-content: space-between;
+      border-top: 0.5px solid var(--dis-seconday-blue);
+  
+      input {
+        border: 0;
+      }
     }
   }
 }
+
