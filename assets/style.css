@@ -266,24 +266,36 @@ footer {
       ul li {
         list-style: none;
         line-height: 32px;
+        }
+
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+      }
+    }
+
+    .credits {
+      display: flex;
+      justify-content: center;
+    
+      .container {
+        margin: 0;
+        padding-top: 2rem;
+        justify-content: space-between;
+        border-top: 0.5px solid var(--dis-seconday-blue);
+    
+        input {
+          border: 0;
+        }
       }
     }
   }
 
-  .credits {
-    display: flex;
-    justify-content: center;
-  
-    .container {
-      margin: 0;
-      padding-top: 2rem;
-      justify-content: space-between;
-      border-top: 0.5px solid var(--dis-seconday-blue);
-  
-      input {
-        border: 0;
-      }
-    }
-  }
-}
+
 
