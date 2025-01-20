@@ -6,6 +6,7 @@
 
 :root {
   --dis-primary-blue: #255bef;
+  --dis-seconday-blue: #8ea1e1;
   --dis-lightgrey: #f6f6f6;
 }
 
@@ -99,27 +100,32 @@ header {
       color: white;
     }
   }
+}
 
-  .actions {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding-bottom: 4rem;
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 4rem;
 
-    input {
-      padding: 12px 24px;
-      border-radius: 40px;
-      border-style: none;
-    }
+  input {
+    padding: 12px 24px;
+    border-radius: 40px;
+    border-style: none;
+  }
 
-    .white {
-      background-color: white;
-    }
+  .white {
+    background-color: white;
+  }
 
-    .black {
-      background-color: black;
-      color: white;
-    }
+  .blue {
+    background-color: var(--dis-seconday-blue);
+    color: white;
+  }
+
+  .black {
+    background-color: black;
+    color: white;
   }
 }
 
@@ -146,9 +152,28 @@ header {
 }
 
 .technology {
-  min-height: 1000px;
+  background-color: var(--dis-lightgrey);
   display: flex;
   justify-content: center;
+
+  .container {
+    width: 50%;
+    display: block;
+    text-align: center;
+
+    .stars {
+      width;
+      background-image: url(/assets/img/stars.svg);
+      background-size: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding-top: 2rem;
+    }
+
+    .actions {
+      padding-top: 2rem;
+    }
+  }
 }
 
 .container {
